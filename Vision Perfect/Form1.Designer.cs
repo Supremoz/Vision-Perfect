@@ -40,6 +40,8 @@
             button2 = new Button();
             panel4 = new Panel();
             button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
@@ -109,6 +111,7 @@
             flowLayoutPanel1.Controls.Add(panel2);
             flowLayoutPanel1.Controls.Add(panel3);
             flowLayoutPanel1.Controls.Add(panel4);
+            flowLayoutPanel1.Controls.Add(button5);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 33);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -164,6 +167,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(button4);
             panel4.Controls.Add(button3);
             panel4.Location = new Point(3, 111);
             panel4.Name = "panel4";
@@ -184,6 +188,36 @@
             button3.TabIndex = 3;
             button3.Text = "About";
             button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(23, 24, 29);
+            button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.ForeColor = Color.White;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(-4, -23);
+            button4.Name = "button4";
+            button4.Size = new Size(398, 94);
+            button4.TabIndex = 4;
+            button4.Text = "About";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(23, 24, 29);
+            button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.ForeColor = Color.White;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(3, 165);
+            button5.Name = "button5";
+            button5.Size = new Size(398, 94);
+            button5.TabIndex = 4;
+            button5.Text = "About";
+            button5.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -219,5 +253,7 @@
         private Button button2;
         private Panel panel4;
         private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
